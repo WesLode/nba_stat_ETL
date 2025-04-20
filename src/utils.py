@@ -6,20 +6,34 @@ import unicodedata
 import time
 from datetime import datetime
 import pandas as pd
+import requests
 
 def clean_utf8(x):
     return unicodedata.normalize('NFD',x).encode('ascii', 'ignore')
 
 
-def export_to_file(f_name: str, sometext, dir="output/data", file_type ="json"):
-    make_dir(dir)
-    if file_type not in ["json","txt","html","md","yml"]:
+def retry(func, retries=3):
+    def retry_wrapper(*args, **kwargs):
+        attempts = 0
+        while attempts < retries:
+            try:
+                return func(*args, **kwargs)
+            except requests.exceptions.RequestException as e:
+                print(e)
+                time.sleep(30)
+                attempts += 1
+
+    return retry_wrapper
+
+def export_to_file(f_name: str, sometext, output_dir="output/data", file_type ="json"):
+    make_dir(output_dir)
+    if file_type not in ["json","txt","html","md","yml","csv","sql"]:
         print("File type not supported.")
         return False
     if file_type == "json":
-        sometext = json.dumps(sometext, indent=4)
+        sometext = json.dumps(sometext, indent=4, ensure_ascii= False)
 
-    with open(f'{dir}/{f_name}.{file_type}', "w") as outfile:
+    with open(f'{output_dir}/{f_name}.{file_type}', "w", encoding="utf-8") as outfile:
         outfile.write(sometext)
 
     return True
