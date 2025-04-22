@@ -1,18 +1,38 @@
 import json
+import os
 from nba_api.stats.static import teams, players
-from nba_api.stats.endpoints import leaguegamefinder, playergamelogs
+from nba_api.stats.endpoints import leaguegamefinder, playergamelogs, \
+    franchisehistory, commonplayerinfo
 from utils import export_to_file
 from constant import JSON_OUTPUT_DIR
 
 import time
 import pandas as pd
 
+
+def get_player_info(i):
+    x = commonplayerinfo.CommonPlayerInfo(player_id=i).get_normalized_dict()
+    export_to_file(str(i),x,output_dir=f'{JSON_OUTPUT_DIR}\\player_info')
+
+
+
+# Get All Current Team 
 def get_all_team():
     nba_teams = teams.get_teams()
     # x = pd.DataFrame(nba_teams)
     export_to_file('nba_team',nba_teams, output_dir=JSON_OUTPUT_DIR)
 
     return nba_teams
+
+# Get All team History
+def get_team_history():
+    x = franchisehistory.FranchiseHistory()
+    table_name = x.get_available_data()
+
+    for i in table_name:
+        export_to_file(i,x.get_normalized_dict()[str(i)], output_dir=JSON_OUTPUT_DIR)
+
+
 
 # Return listed []
 def get_all_player(status=None):
@@ -65,7 +85,7 @@ def index_game(season):
     print(season_abbr)
     game_pair = list()
     gmae_code = list()
-    with open(f"output\\{season_abbr}\\game.json",'r') as f1:
+    with open(f"{JSON_OUTPUT_DIR}\\gameSummary\\{season_abbr}.json",'r') as f1:
         game_data = json.load(f1)
         for game in game_data['LeagueGameFinderResults']:
             # print(game)
@@ -85,8 +105,12 @@ def index_game(season):
 
 def get_player_stat_per_game(from_season = 1983, to_season = 2024, season_Type = 'All'):
     if season_Type == 'All':
-        season_Type = ['Regular Season', 'Playoffs', 'PlayIn']
-
+        season_Type = ['Regular Season', 'Playoffs', 'PlayIn', 'IST']
+    elif season_Type not in ['Regular Season', 'Playoffs', 'PlayIn', 'IST']:
+        print('Incorrent Season Type')
+        return False
+    else:
+        season_Type = [season_Type]
 
     for season in range(from_season,to_season+1):
 
@@ -105,9 +129,26 @@ def get_player_stat_per_game(from_season = 1983, to_season = 2024, season_Type =
 
     return True        
 
+def dir_check(dir):
+    return os.listdir(dir)
+
 if __name__ == "__main__":
     # get_all_player()
     # get_all_team()
     # get_game_summary()
-    get_player_stat_per_game()
-
+    # get_player_stat_per_game(from_season=2024, season_Type='Playoffs')
+    # get_team_history()
+    with open('output\\data\\json_export\\All_players.json','r', encoding='utf-8') as f1:
+        all_player = json.load(f1)
+    player_record_cc = 0
+    
+    check_list = dir_check('output\\data\\json_export\\player_info')
+    for i in all_player:
+        if f"{i['id']}.json" not in check_list:
+            get_player_info(i['id'])   
+            player_record_cc += 1
+            if player_record_cc >=10:
+                time.sleep(10)
+                player_record_cc = 0
+    # get_player_info(76003)   
+    # index_game(2023)

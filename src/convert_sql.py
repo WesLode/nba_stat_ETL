@@ -7,13 +7,15 @@ import pandas as pd
 import json
 
 with open('output\\data\\json_export\\player_stats\\player_stats_2024_25_playoffs.json'
+# with open('output\\data\\json_export\\All_players.json'
           ,'r' , encoding='utf-8') as f1:
     output_text = json.load(f1)
 
 team_df = pd.DataFrame(output_text['PlayerGameLogs'])
+# team_df = pd.DataFrame(output_text)
 export_to_file(
-    'team',
+    'output',
     create_postgres_sql_from_pandas(team_df, 'team'),
     output_dir='output\\sql',
     file_type='sql'
-)
+)       

@@ -9,5 +9,18 @@ Install required package
 pip install -r requirements.txt
 ```
 
+Run Docker for Database
+
+Postgres: 
+```bash
+# Create a Docker Volume
+docker volume create pgdata
+```
+```bash
+# Start the image
+docker run --name (image_name) -e POSTGRES_PASSWORD=(your passowrd for postgres) -d postgres -p 5435:5432 -v pgdata:/var/lib/postgresql/data
+
+```
+
 ### Export Arguments
 

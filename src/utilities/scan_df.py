@@ -6,7 +6,7 @@ def pandas_dtype_to_postgres_type(dtype):
     if pd.api.types.is_integer_dtype(dtype):
     # Use BIGINT for 64-bit integers (common in Pandas)
         if dtype == np.int64:
-            return "BIGINT"
+            return "INTEGER"
         else:
             return "INTEGER"
     elif pd.api.types.is_float_dtype(dtype):
@@ -52,11 +52,12 @@ def create_postgres_sql_from_pandas(df: pd.DataFrame, table_name: str) -> str:
     columns_sql = []
     for column_name, dtype in df.dtypes.items():
         sql_type = pandas_dtype_to_postgres_type(dtype)
-        quoted_name = f'"{column_name}"'
+        quoted_name = f'"{column_name.lower()}"'
         columns_sql.append(f"  {quoted_name} {sql_type}")
 
     sql_script = f"CREATE TABLE \"{table_name}\" (\n"
-    sql_script += ",\n".join(columns_sql)
+    sql_script += " NOT NULL,\n".join(columns_sql)
+    sql_script += ',\n  "creation_timestamp" TIMESTAMPTZ DEFAULT NOW() NOT NULL'
     sql_script += "\n);"
 
     return sql_script
