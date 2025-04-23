@@ -2,7 +2,9 @@ import json
 import os
 from nba_api.stats.static import teams, players
 from nba_api.stats.endpoints import leaguegamefinder, playergamelogs, \
-    franchisehistory, commonplayerinfo
+    franchisehistory, commonplayerinfo,\
+    boxscoreadvancedv2, boxscoredefensivev2,boxscorehustlev2,boxscorematchupsv3,\
+    BoxScoreTraditionalV3, BoxScoreUsageV3,hustlestatsboxscore
 from utils import export_to_file
 from constant import JSON_OUTPUT_DIR
 
@@ -132,23 +134,27 @@ def get_player_stat_per_game(from_season = 1983, to_season = 2024, season_Type =
 def dir_check(dir):
     return os.listdir(dir)
 
+
+
+
 if __name__ == "__main__":
     # get_all_player()
     # get_all_team()
-    # get_game_summary()
-    # get_player_stat_per_game(from_season=2024, season_Type='Playoffs')
+    get_game_summary()
+    get_player_stat_per_game(from_season=2024)
     # get_team_history()
-    with open('output\\data\\json_export\\All_players.json','r', encoding='utf-8') as f1:
-        all_player = json.load(f1)
-    player_record_cc = 0
-    
-    check_list = dir_check('output\\data\\json_export\\player_info')
-    for i in all_player:
-        if f"{i['id']}.json" not in check_list:
-            get_player_info(i['id'])   
-            player_record_cc += 1
-            if player_record_cc >=10:
-                time.sleep(10)
-                player_record_cc = 0
+    if False:
+        with open('output\\data\\json_export\\All_players.json','r', encoding='utf-8') as f1:
+            all_player = json.load(f1)
+        player_record_cc = 0
+        
+        check_list = dir_check('output\\data\\json_export\\player_info')
+        for i in all_player:
+            if f"{i['id']}.json" not in check_list:
+                get_player_info(i['id'])   
+                player_record_cc += 1
+                if player_record_cc >=10:
+                    time.sleep(10)
+                    player_record_cc = 0
     # get_player_info(76003)   
     # index_game(2023)

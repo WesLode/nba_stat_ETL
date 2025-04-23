@@ -11,6 +11,23 @@ import requests
 def clean_utf8(x):
     return unicodedata.normalize('NFD',x).encode('ascii', 'ignore')
 
+def get_data_sample(file, sample_size=10):
+    with open(file, 'r',encoding='utf-8') as f1:
+        temp = json.load(f1)
+    result = []
+    sample_count = 0
+    for table in temp:
+        for j in temp[table]:
+            if sample_count >=sample_size:
+                break
+            sample_count +=1
+            result+=[j]
+        export_to_file(f'{table}',{
+            table: result,
+            },
+            output_dir= f'output\\data\\sample'
+        )
+
 
 def retry(func, retries=3):
     def retry_wrapper(*args, **kwargs):
