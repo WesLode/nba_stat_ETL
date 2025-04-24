@@ -6,3 +6,4 @@ tabulate
 Flask
 ipykernel
 pyyaml
+pyprobables
