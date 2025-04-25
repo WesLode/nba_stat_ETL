@@ -5,7 +5,7 @@ from nba_api.stats.endpoints import leaguegamefinder, playergamelogs, \
     franchisehistory, commonplayerinfo,\
     boxscoreadvancedv2, boxscoredefensivev2,boxscorehustlev2,boxscorematchupsv3,\
     BoxScoreTraditionalV3, BoxScoreUsageV3,hustlestatsboxscore
-from utils import export_to_file
+from utils import export_to_file, retry
 from constant import JSON_OUTPUT_DIR
 
 from api_call.data_per_game import get_box_score_per_game
@@ -60,11 +60,18 @@ if __name__ == "__main__":
     # Static
     # get_all_player()
     # get_all_team()
+    
+    
+    # get_game_summary()
 
     # data per game
-    get_box_score_per_game(season = 2021)
+    for year in range(1983,2025):
+    # for year in reversed(range(1983,2017)):
+        print(f'Season{year}', end=" ")
+        # @retry
+        get_box_score_per_game(season = year)
+
     # Continus
-    # get_game_summary()
     # get_player_stat_per_game(from_season=2024)
     # get_team_history()
     # if True:

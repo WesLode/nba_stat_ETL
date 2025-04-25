@@ -1,3 +1,4 @@
+import functools
 import json
 from pathlib import Path
 import logging
@@ -29,18 +30,30 @@ def get_data_sample(file, sample_size=10):
         )
 
 
-def retry(func, retries=3):
-    def retry_wrapper(*args, **kwargs):
-        attempts = 0
-        while attempts < retries:
-            try:
-                return func(*args, **kwargs)
-            except requests.exceptions.RequestException as e:
-                print(e)
-                time.sleep(30)
-                attempts += 1
-
-    return retry_wrapper
+def retry(max_retries=3, delay=1, exceptions=(Exception,)):
+    """Decorator to retry a function call."""
+    def decorator_retry(func):
+        @functools.wraps(func) # Preserves original function metadata
+        def wrapper_retry(*args, **kwargs):
+            last_exception = None
+            for attempt in range(max_retries):
+                try:
+                    print(f"Decorator: Attempt {attempt + 1}/{max_retries} for {func.__name__}")
+                    return func(*args, **kwargs) # Call the decorated function
+                except exceptions as e: # Catch only specified exceptions
+                    print(f"Decorator: Attempt {attempt + 1} failed: {e}")
+                    last_exception = e
+                    if attempt == max_retries - 1:
+                        print("Decorator: All retries failed.")
+                        raise # Re-raise the last caught exception
+                    else:
+                        print(f"Decorator: Waiting {delay}s...")
+                        time.sleep(delay)
+            # This should not be reached if exceptions are raised correctly
+            # but ensures we raise if loop finishes unexpectedly
+            raise RuntimeError("Retry loop exited without success or exception") from last_exception
+        return wrapper_retry
+    return decorator_retry
 
 def export_to_file(f_name: str, sometext, output_dir="output/data", file_type ="json"):
     make_dir(output_dir)

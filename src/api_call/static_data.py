@@ -78,13 +78,14 @@ def get_game_summary(from_season = 1983, to_season = 2024):
             print('loading...')
             time.sleep(1)
             batch_size = 0
+    print('Game Summary export at outpou/data/json_export/gameSummary.')
     return True
 
-def get_game_season(season):
+def get_game_season(season=2024, league_id = "00"):
     h= str(season +1)[-2:]
     print(f"{str(season)}-{str(h)}")
     gamefinder = leaguegamefinder.LeagueGameFinder(
-        league_id_nullable= "00",
+        league_id_nullable= league_id,
             # nba = "00"
             # aba = "01"
             # wnba = "10"
