@@ -207,7 +207,7 @@ def format_and_print_profile(profile):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Profile a JSON file to understand its structure and data types.")
-    parser.add_argument("json_file", help="Path to the input JSON file.")
+    parser.add_argument("-f","--json_file", help="Path to the input JSON file.")
     parser.add_argument("-o", "--output", help="Path to save the profile results (JSON format).")
 
     args = parser.parse_args()

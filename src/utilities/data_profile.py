@@ -329,7 +329,7 @@ if __name__ == "__main__":
                     "and Count-Min Sketch + Limited Set for string frequency/uniqueness estimation.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
         )
-    parser.add_argument("json_file", help="Path to the input JSON file.")
+    parser.add_argument("-f","--json_file",help="Path to the input JSON file.")
     parser.add_argument("-o", "--output", help="Path to save the profile results (JSON format).")
     parser.add_argument("--cms_error_rate", type=float, default=0.001, help="Target error rate for Count-Min Sketch (adjusts width/depth).")
     parser.add_argument("--cms_confidence", type=float, default=0.99, help="Target confidence for Count-Min Sketch estimates (adjusts depth/width).")

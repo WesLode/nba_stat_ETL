@@ -6,7 +6,7 @@ read_dir = 'output\\data\\json_export\\player_stats'
 
 append_dic = 'output\\data\\json_export\\player_stats.json'
 
-file_index = False
+file_index = True
 if file_index == False:
     with open('player_stat_index.json','r', encoding='utf-8') as f2:
         file_index = set(json.load(f2))

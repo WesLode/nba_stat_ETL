@@ -8,13 +8,13 @@ from nba_api.stats.endpoints import leaguegamefinder, playergamelogs, \
 from utils import export_to_file, retry
 from constant import JSON_OUTPUT_DIR
 
-from api_call.data_per_game import get_box_score_per_game
+from api_call.data_per_game import get_box_score_per_game, get_traditional_box_score
 
 
 import time
 import pandas as pd
 from api_call.static_data import get_all_team, get_all_player, \
-    get_team_history, get_player_stat_per_game, get_game_summary
+    get_team_history, get_player_log_per_game, get_game_summary
 
 #################################################################################
 
@@ -62,17 +62,16 @@ if __name__ == "__main__":
     # get_all_team()
     
     
-    # get_game_summary()
+    get_game_summary()
 
-    # data per game
-    for year in range(1983,2025):
-    # for year in reversed(range(1983,2017)):
-        print(f'Season{year}', end=" ")
-        # @retry
+    # data per gameboxScoreTraditional
+    # for year in range(2007,2025):
+    for year in reversed(range(1983,2025)):
+    #     print(f'Season{year}', end=" ")
         get_box_score_per_game(season = year)
 
     # Continus
-    # get_player_stat_per_game(from_season=2024)
+    # get_player_log_per_game(from_season=2024)
     # get_team_history()
     # if True:
 
@@ -84,3 +83,6 @@ if __name__ == "__main__":
 
     # Index
     # index_game(2023)
+    
+    
+    print('done!!!')

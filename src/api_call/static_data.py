@@ -40,7 +40,7 @@ def get_team_history():
         export_to_file(i,x.get_normalized_dict()[str(i)], output_dir=JSON_OUTPUT_DIR)
 
 # Get player stats per game
-def get_player_stat_per_game(from_season = 1983, to_season = 2024, season_Type = 'All'):
+def get_player_log_per_game(from_season = 1983, to_season = 2024, season_Type = 'All'):
     if season_Type == 'All':
         season_Type = ['Regular Season', 'Playoffs', 'PlayIn', 'IST']
     elif season_Type not in ['Regular Season', 'Playoffs', 'PlayIn', 'IST']:
