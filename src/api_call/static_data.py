@@ -64,22 +64,25 @@ def get_player_log_per_game(from_season = 1983, to_season = 2024, season_Type = 
                 output_dir=f"{JSON_OUTPUT_DIR}\\player_stats"
             )
 
-    return True        
+    return result        
 
 def get_game_summary(from_season = 1983, to_season = 2024):
     if from_season <1983 or to_season >2024:
         print('data not available for the input year')
         return False
     batch_size = 0
+    all_game_id = []
     for season in range(from_season,to_season+1):
-        get_game_season(season)
+        result = get_game_season(season)
         batch_size += 1
+        x = get_game_id(result)
+        all_game_id.extend(x)
         if batch_size>=3:
             print('loading...')
             time.sleep(1)
             batch_size = 0
     print('Game Summary export at outpou/data/json_export/gameSummary.')
-    return True
+    return all_game_id, result
 
 def get_game_season(season=2024, league_id = "00"):
     h= str(season +1)[-2:]
@@ -101,6 +104,13 @@ def get_game_season(season=2024, league_id = "00"):
         output_dir=f"{JSON_OUTPUT_DIR}\\gameSummary"
     )
 
-    # return gamefinder.get_normalized_dict()
-    return gamefinder.get_data_frames()
+    return gamefinder.get_normalized_dict()
 
+def get_game_id(game_summary):
+    game_id =set()
+    for i in game_summary:
+        print(f'Total game: {len(game_summary[i])}')
+        for j in game_summary[i]:
+            game_id.add(j['GAME_ID'])
+
+    return list(game_id)

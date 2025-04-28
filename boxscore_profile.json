@@ -1,0 +1,1332 @@
+{
+  "$": {
+    "count": 1,
+    "types": {
+      "list": 1
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "list_stats": {
+      "min_length": 39377,
+      "max_length": 39377,
+      "avg_length": 39377
+    }
+  },
+  "$[*]": {
+    "count": 39377,
+    "types": {
+      "dict": 39377
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0
+  },
+  "$[*].id": {
+    "count": 39377,
+    "types": {
+      "str": 39377
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 10,
+      "max_length": 10,
+      "avg_length": 10,
+      "empty_count": 0,
+      "unique_count": 39375,
+      "most_common": [
+        [
+          "0042400103",
+          2
+        ],
+        [
+          "0042400144",
+          2
+        ],
+        [
+          "0048300044",
+          1
+        ],
+        [
+          "0048300045",
+          1
+        ],
+        [
+          "0048300046",
+          1
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats": {
+    "count": 39376,
+    "types": {
+      "list": 39376
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 4.426554246241365,
+    "list_stats": {
+      "min_length": 0,
+      "max_length": 43,
+      "avg_length": 23.9734863876473
+    }
+  },
+  "$[*].TeamStats": {
+    "count": 39376,
+    "types": {
+      "list": 39376
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 4.426554246241365,
+    "list_stats": {
+      "min_length": 0,
+      "max_length": 2,
+      "avg_length": 1.9113419341731004
+    }
+  },
+  "$[*].PlayerStats[*]": {
+    "count": 943980,
+    "types": {
+      "dict": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0
+  },
+  "$[*].PlayerStats[*].GAME_ID": {
+    "count": 943980,
+    "types": {
+      "str": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 10,
+      "max_length": 10,
+      "avg_length": 10,
+      "empty_count": 0,
+      "unique_count": 37631,
+      "most_common": [
+        [
+          "0042400103",
+          60
+        ],
+        [
+          "0042400144",
+          50
+        ],
+        [
+          "0012400049",
+          43
+        ],
+        [
+          "0012200040",
+          42
+        ],
+        [
+          "0012300001",
+          42
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].TEAM_ID": {
+    "count": 943980,
+    "types": {
+      "int": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 41,
+      "max": 1610616858,
+      "mean": 1609037954.7299116,
+      "median": 1610612751.0,
+      "stdev": 50337821.69371315
+    }
+  },
+  "$[*].PlayerStats[*].TEAM_ABBREVIATION": {
+    "count": 943980,
+    "types": {
+      "str": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 3,
+      "max_length": 3,
+      "avg_length": 3,
+      "empty_count": 0,
+      "unique_count": 95,
+      "most_common": [
+        [
+          "MIA",
+          33778
+        ],
+        [
+          "LAL",
+          33437
+        ],
+        [
+          "BOS",
+          33301
+        ],
+        [
+          "SAS",
+          33256
+        ],
+        [
+          "DAL",
+          32507
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].TEAM_CITY": {
+    "count": 943980,
+    "types": {
+      "str": 943961,
+      "NoneType": 19
+    },
+    "null_percentage": 0.0020127545075107525,
+    "empty_percentage": 0.009957838089790038,
+    "string_stats": {
+      "min_length": 0,
+      "max_length": 25,
+      "avg_length": 8.222757084243947,
+      "empty_count": 94,
+      "unique_count": 67,
+      "most_common": [
+        [
+          "Los Angeles",
+          52636
+        ],
+        [
+          "Miami",
+          33778
+        ],
+        [
+          "Boston",
+          33301
+        ],
+        [
+          "San Antonio",
+          33244
+        ],
+        [
+          "Dallas",
+          32507
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].PLAYER_ID": {
+    "count": 943980,
+    "types": {
+      "int": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 2,
+      "max": 1966938209,
+      "mean": 881992.7564482299,
+      "median": 200748.0,
+      "stdev": 28557500.21444584
+    }
+  },
+  "$[*].PlayerStats[*].PLAYER_NAME": {
+    "count": 943980,
+    "types": {
+      "str": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 3,
+      "max_length": 25,
+      "avg_length": 12.86735100319922,
+      "empty_count": 0,
+      "unique_count": 3593,
+      "most_common": [
+        [
+          "LeBron James",
+          1980
+        ],
+        [
+          "Vince Carter",
+          1808
+        ],
+        [
+          "Dirk Nowitzki",
+          1759
+        ],
+        [
+          "Udonis Haslem",
+          1750
+        ],
+        [
+          "Tim Duncan",
+          1721
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].NICKNAME": {
+    "count": 943980,
+    "types": {
+      "str": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 2,
+      "max_length": 17,
+      "avg_length": 5.312871035403292,
+      "empty_count": 0,
+      "unique_count": 1710,
+      "most_common": [
+        [
+          "Chris",
+          15427
+        ],
+        [
+          "Jason",
+          10498
+        ],
+        [
+          "Kevin",
+          9539
+        ],
+        [
+          "Michael",
+          9202
+        ],
+        [
+          "Anthony",
+          9145
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].START_POSITION": {
+    "count": 943980,
+    "types": {
+      "str": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 60.14248183224221,
+    "string_stats": {
+      "min_length": 0,
+      "max_length": 1,
+      "avg_length": 0.39857518167757794,
+      "empty_count": 567733,
+      "unique_count": 4,
+      "most_common": [
+        [
+          "",
+          567733
+        ],
+        [
+          "G",
+          150504
+        ],
+        [
+          "F",
+          150503
+        ],
+        [
+          "C",
+          75240
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].COMMENT": {
+    "count": 943980,
+    "types": {
+      "str": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 83.03597533846056,
+    "string_stats": {
+      "min_length": 0,
+      "max_length": 40,
+      "avg_length": 3.767775800334753,
+      "empty_count": 783843,
+      "unique_count": 8305,
+      "most_common": [
+        [
+          "",
+          783843
+        ],
+        [
+          "DNP - Coach's Decision",
+          127599
+        ],
+        [
+          "DND - Injury/Illness",
+          4052
+        ],
+        [
+          "DNP - Injury/Illness",
+          2749
+        ],
+        [
+          "DND - Sprained Left Ankle",
+          423
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].MIN": {
+    "count": 943980,
+    "types": {
+      "str": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 11,
+      "max_length": 12,
+      "avg_length": 11.843508572259742,
+      "empty_count": 0,
+      "unique_count": 3387,
+      "most_common": [
+        [
+          "12.000000:00",
+          2601
+        ],
+        [
+          "24.000000:00",
+          1383
+        ],
+        [
+          "48.000000:00",
+          547
+        ],
+        [
+          "27.000000:54",
+          440
+        ],
+        [
+          "25.000000:43",
+          431
+        ]
+      ]
+    }
+  },
+  "$[*].PlayerStats[*].E_OFF_RATING": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -1666.7,
+      "max": 568.2,
+      "mean": 102.48721287044704,
+      "median": 103.6,
+      "stdev": 25.129231909550416
+    }
+  },
+  "$[*].PlayerStats[*].OFF_RATING": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 500.0,
+      "mean": 84.87913854107079,
+      "median": 100.0,
+      "stdev": 44.3755080211958
+    }
+  },
+  "$[*].PlayerStats[*].E_DEF_RATING": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -1666.7,
+      "max": 681.8,
+      "mean": 105.21393864617372,
+      "median": 104.7,
+      "stdev": 24.806313435076724
+    }
+  },
+  "$[*].PlayerStats[*].DEF_RATING": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 500.0,
+      "mean": 87.0691330324795,
+      "median": 100.0,
+      "stdev": 45.05618706813741
+    }
+  },
+  "$[*].PlayerStats[*].E_NET_RATING": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -1866.7,
+      "max": 1666.7,
+      "mean": -2.7266341647644845,
+      "median": -0.9,
+      "stdev": 34.90312579525559
+    }
+  },
+  "$[*].PlayerStats[*].NET_RATING": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -500.0,
+      "max": 500.0,
+      "mean": -2.1900344286955233,
+      "median": 0.0,
+      "stdev": 30.77078934370443
+    }
+  },
+  "$[*].PlayerStats[*].AST_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.333,
+      "mean": 0.13605397518848508,
+      "median": 0.1,
+      "stdev": 0.14604957983030553
+    }
+  },
+  "$[*].PlayerStats[*].AST_TOV": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 21.0,
+      "mean": 0.9950001850082105,
+      "median": 0.33,
+      "stdev": 1.5736951539563726
+    }
+  },
+  "$[*].PlayerStats[*].AST_RATIO": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 15.4914542793675,
+      "median": 12.5,
+      "stdev": 15.722522355832705
+    }
+  },
+  "$[*].PlayerStats[*].OREB_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.03815317485539948,
+      "median": 0.0,
+      "stdev": 0.06269475435501146
+    }
+  },
+  "$[*].PlayerStats[*].DREB_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.10715032415941016,
+      "median": 0.091,
+      "stdev": 0.11088557772231011
+    }
+  },
+  "$[*].PlayerStats[*].REB_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.07280147672620182,
+      "median": 0.062,
+      "stdev": 0.07161783434842207
+    }
+  },
+  "$[*].PlayerStats[*].TM_TOV_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 11.089956733597107,
+      "median": 8.3,
+      "stdev": 13.618675387630319
+    }
+  },
+  "$[*].PlayerStats[*].EFG_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.5,
+      "mean": 0.4600602909860172,
+      "median": 0.5,
+      "stdev": 0.2816888025288789
+    }
+  },
+  "$[*].PlayerStats[*].TS_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.5,
+      "mean": 0.4974117440660211,
+      "median": 0.51,
+      "stdev": 0.27121548820344943
+    }
+  },
+  "$[*].PlayerStats[*].USG_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 0.15302047501006377,
+      "median": 0.162,
+      "stdev": 0.10448982830466999
+    }
+  },
+  "$[*].PlayerStats[*].E_USG_PCT": {
+    "count": 943980,
+    "types": {
+      "float": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 0.15694385792071866,
+      "median": 0.166,
+      "stdev": 0.10864045235093966
+    }
+  },
+  "$[*].PlayerStats[*].E_PACE": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -2400.0,
+      "max": 14400.0,
+      "mean": 97.77805566578076,
+      "median": 96.38,
+      "stdev": 52.04379246702796
+    }
+  },
+  "$[*].PlayerStats[*].PACE": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 28811.52,
+      "mean": 99.55445725608581,
+      "median": 96.37,
+      "stdev": 103.42193966619234
+    }
+  },
+  "$[*].PlayerStats[*].PACE_PER40": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 24009.6,
+      "mean": 82.9620336230094,
+      "median": 80.31,
+      "stdev": 86.18494622163094
+    }
+  },
+  "$[*].PlayerStats[*].POSS": {
+    "count": 943980,
+    "types": {
+      "int": 943980
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 122,
+      "mean": 38.52368800186444,
+      "median": 40.0,
+      "stdev": 27.042308979159415
+    }
+  },
+  "$[*].PlayerStats[*].PIE": {
+    "count": 943980,
+    "types": {
+      "float": 783749,
+      "NoneType": 160231
+    },
+    "null_percentage": 16.97398249962923,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -14.0,
+      "max": 15.0,
+      "mean": 0.08373020316453354,
+      "median": 0.088,
+      "stdev": 0.21519660020794185
+    }
+  },
+  "$[*].TeamStats[*]": {
+    "count": 75261,
+    "types": {
+      "dict": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0
+  },
+  "$[*].TeamStats[*].GAME_ID": {
+    "count": 75261,
+    "types": {
+      "str": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 10,
+      "max_length": 10,
+      "avg_length": 10,
+      "empty_count": 0,
+      "unique_count": 37631,
+      "most_common": [
+        [
+          "0042400103",
+          4
+        ],
+        [
+          "0042400144",
+          4
+        ],
+        [
+          "0029600001",
+          2
+        ],
+        [
+          "0029600002",
+          2
+        ],
+        [
+          "0029600003",
+          2
+        ]
+      ]
+    }
+  },
+  "$[*].TeamStats[*].TEAM_ID": {
+    "count": 75261,
+    "types": {
+      "int": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 41,
+      "max": 1610616858,
+      "mean": 1609050544.4486785,
+      "median": 1610612751,
+      "stdev": 50136747.15505022
+    }
+  },
+  "$[*].TeamStats[*].TEAM_NAME": {
+    "count": 75261,
+    "types": {
+      "str": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 3,
+      "max_length": 25,
+      "avg_length": 6.718964669616401,
+      "empty_count": 0,
+      "unique_count": 96,
+      "most_common": [
+        [
+          "Heat",
+          2672
+        ],
+        [
+          "Lakers",
+          2664
+        ],
+        [
+          "Spurs",
+          2655
+        ],
+        [
+          "Celtics",
+          2647
+        ],
+        [
+          "Mavericks",
+          2573
+        ]
+      ]
+    }
+  },
+  "$[*].TeamStats[*].TEAM_ABBREVIATION": {
+    "count": 75261,
+    "types": {
+      "str": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 3,
+      "max_length": 3,
+      "avg_length": 3,
+      "empty_count": 0,
+      "unique_count": 95,
+      "most_common": [
+        [
+          "MIA",
+          2672
+        ],
+        [
+          "LAL",
+          2664
+        ],
+        [
+          "SAS",
+          2656
+        ],
+        [
+          "BOS",
+          2647
+        ],
+        [
+          "DAL",
+          2573
+        ]
+      ]
+    }
+  },
+  "$[*].TeamStats[*].TEAM_CITY": {
+    "count": 75261,
+    "types": {
+      "str": 75259,
+      "NoneType": 2
+    },
+    "null_percentage": 0.0026574188490718965,
+    "empty_percentage": 0.01594451309443138,
+    "string_stats": {
+      "min_length": 0,
+      "max_length": 25,
+      "avg_length": 8.228637106525465,
+      "empty_count": 12,
+      "unique_count": 67,
+      "most_common": [
+        [
+          "Los Angeles",
+          4241
+        ],
+        [
+          "Miami",
+          2672
+        ],
+        [
+          "San Antonio",
+          2655
+        ],
+        [
+          "Boston",
+          2647
+        ],
+        [
+          "Dallas",
+          2573
+        ]
+      ]
+    }
+  },
+  "$[*].TeamStats[*].MIN": {
+    "count": 75261,
+    "types": {
+      "str": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 12,
+      "max_length": 13,
+      "avg_length": 12.999574779084446,
+      "empty_count": 0,
+      "unique_count": 90,
+      "most_common": [
+        [
+          "240.000000:00",
+          70590
+        ],
+        [
+          "265.000000:00",
+          3848
+        ],
+        [
+          "290.000000:00",
+          517
+        ],
+        [
+          "315.000000:00",
+          82
+        ],
+        [
+          "200.000000:00",
+          57
+        ]
+      ]
+    }
+  },
+  "$[*].TeamStats[*].E_OFF_RATING": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 51.3,
+      "max": 160.2,
+      "mean": 104.82557438043983,
+      "median": 104.8,
+      "stdev": 11.9424316866104
+    }
+  },
+  "$[*].TeamStats[*].OFF_RATING": {
+    "count": 75261,
+    "types": {
+      "float": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 163.0,
+      "mean": 106.41249784084718,
+      "median": 106.4,
+      "stdev": 11.958629570880536
+    }
+  },
+  "$[*].TeamStats[*].E_DEF_RATING": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 51.3,
+      "max": 160.2,
+      "mean": 104.8241751378646,
+      "median": 104.8,
+      "stdev": 11.942628459454786
+    }
+  },
+  "$[*].TeamStats[*].DEF_RATING": {
+    "count": 75261,
+    "types": {
+      "float": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 163.0,
+      "mean": 106.40962915719962,
+      "median": 106.4,
+      "stdev": 11.953005359377608
+    }
+  },
+  "$[*].TeamStats[*].E_NET_RATING": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -73.5,
+      "max": 73.5,
+      "mean": 0.001405886652049698,
+      "median": 0.0,
+      "stdev": 15.033961258215506
+    }
+  },
+  "$[*].TeamStats[*].NET_RATING": {
+    "count": 75261,
+    "types": {
+      "float": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -74.5,
+      "max": 74.5,
+      "mean": 0.0028646975192995043,
+      "median": 0.0,
+      "stdev": 14.504021463640399
+    }
+  },
+  "$[*].TeamStats[*].AST_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.107,
+      "max": 0.974,
+      "mean": 0.5935969703009767,
+      "median": 0.595,
+      "stdev": 0.10530072531880941
+    }
+  },
+  "$[*].TeamStats[*].AST_TOV": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.14,
+      "max": 25.0,
+      "mean": 1.7007566274666135,
+      "median": 1.56,
+      "stdev": 0.7483658414948499
+    }
+  },
+  "$[*].TeamStats[*].AST_RATIO": {
+    "count": 75261,
+    "types": {
+      "float": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 39.1,
+      "mean": 17.093557088000424,
+      "median": 17.1,
+      "stdev": 3.3416509726262147
+    }
+  },
+  "$[*].TeamStats[*].OREB_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 67640,
+      "NoneType": 7621
+    },
+    "null_percentage": 10.126094524388462,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.022,
+      "max": 0.658,
+      "mean": 0.2960133500887049,
+      "median": 0.295,
+      "stdev": 0.0756478545227203
+    }
+  },
+  "$[*].TeamStats[*].DREB_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 67643,
+      "NoneType": 7618
+    },
+    "null_percentage": 10.122108396114854,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.342,
+      "max": 0.978,
+      "mean": 0.7040053664089411,
+      "median": 0.705,
+      "stdev": 0.07562958998609
+    }
+  },
+  "$[*].TeamStats[*].REB_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 61130,
+      "NoneType": 14131
+    },
+    "null_percentage": 18.775992878117485,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.25,
+      "max": 0.75,
+      "mean": 0.5000009978733846,
+      "median": 0.5,
+      "stdev": 0.04944014209490574
+    }
+  },
+  "$[*].TeamStats[*].E_TM_TOV_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1.076,
+      "max": 33.985,
+      "mean": 14.949542422430403,
+      "median": 14.774,
+      "stdev": 4.015266862560134
+    }
+  },
+  "$[*].TeamStats[*].TM_TOV_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1.1,
+      "max": 34.4,
+      "mean": 15.184389077137732,
+      "median": 15.0,
+      "stdev": 4.094003063948643
+    }
+  },
+  "$[*].TeamStats[*].EFG_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.234,
+      "max": 0.891,
+      "mean": 0.5032315726529799,
+      "median": 0.5,
+      "stdev": 0.06886482478053121
+    }
+  },
+  "$[*].TeamStats[*].TS_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.255,
+      "max": 0.891,
+      "mean": 0.5438496312537373,
+      "median": 0.542,
+      "stdev": 0.06362324642099929
+    }
+  },
+  "$[*].TeamStats[*].USG_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "stdev": 0.0
+    }
+  },
+  "$[*].TeamStats[*].E_USG_PCT": {
+    "count": 75261,
+    "types": {
+      "float": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 0.316,
+      "mean": 0.19847977039901146,
+      "median": 0.199,
+      "stdev": 0.0029940867633618446
+    }
+  },
+  "$[*].TeamStats[*].E_PACE": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 74.14,
+      "max": 149.46,
+      "mean": 96.48547405488007,
+      "median": 96.2,
+      "stdev": 6.29625034306813
+    }
+  },
+  "$[*].TeamStats[*].PACE": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 73.0,
+      "max": 512.05,
+      "mean": 95.02965876021527,
+      "median": 94.64,
+      "stdev": 7.0158362266284495
+    }
+  },
+  "$[*].TeamStats[*].PACE_PER40": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 60.83,
+      "max": 426.71,
+      "mean": 79.19137891170021,
+      "median": 78.87,
+      "stdev": 5.846530680528126
+    }
+  },
+  "$[*].TeamStats[*].POSS": {
+    "count": 75261,
+    "types": {
+      "int": 75261
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 149,
+      "mean": 95.60748594889783,
+      "median": 95,
+      "stdev": 6.794283428213885
+    }
+  },
+  "$[*].TeamStats[*].PIE": {
+    "count": 75261,
+    "types": {
+      "float": 75255,
+      "NoneType": 6
+    },
+    "null_percentage": 0.00797225654721569,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -0.173,
+      "max": 1.173,
+      "mean": 0.5000114676765663,
+      "median": 0.5,
+      "stdev": 0.10058441945895794
+    }
+  }
+}

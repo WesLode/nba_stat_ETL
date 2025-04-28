@@ -1,0 +1,1336 @@
+{
+  "$": {
+    "count": 1,
+    "types": {
+      "list": 1
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "list_stats": {
+      "min_length": 1054532,
+      "max_length": 1054532,
+      "avg_length": 1054532
+    }
+  },
+  "$[*]": {
+    "count": 1054532,
+    "types": {
+      "dict": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0
+  },
+  "$[*].SEASON_ID": {
+    "count": 294476,
+    "types": {
+      "str": 294476
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 5,
+      "max_length": 5,
+      "avg_length": 5,
+      "empty_count": 0,
+      "unique_count": 26,
+      "most_common": [
+        [
+          "21995",
+          23744
+        ],
+        [
+          "21989",
+          22494
+        ],
+        [
+          "21990",
+          22472
+        ],
+        [
+          "21993",
+          22470
+        ],
+        [
+          "21992",
+          22358
+        ]
+      ]
+    }
+  },
+  "$[*].PLAYER_ID": {
+    "count": 1054532,
+    "types": {
+      "int": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 2,
+      "max": 1642530,
+      "mean": 278954.74350517575,
+      "median": 2757.0,
+      "stdev": 543774.4882547837
+    }
+  },
+  "$[*].PLAYER_NAME": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 4,
+      "max_length": 24,
+      "avg_length": 12.739332708727662,
+      "empty_count": 0,
+      "unique_count": 3455,
+      "most_common": [
+        [
+          "LeBron James",
+          1864
+        ],
+        [
+          "John Stockton",
+          1686
+        ],
+        [
+          "Karl Malone",
+          1669
+        ],
+        [
+          "Dirk Nowitzki",
+          1667
+        ],
+        [
+          "Tim Duncan",
+          1643
+        ]
+      ]
+    }
+  },
+  "$[*].NICKNAME": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 2,
+      "max_length": 15,
+      "avg_length": 5.2238869944202735,
+      "empty_count": 0,
+      "unique_count": 1468,
+      "most_common": [
+        [
+          "Chris",
+          16064
+        ],
+        [
+          "Kevin",
+          13394
+        ],
+        [
+          "John",
+          12592
+        ],
+        [
+          "Mike",
+          12266
+        ],
+        [
+          "Michael",
+          12213
+        ]
+      ]
+    }
+  },
+  "$[*].TEAM_ID": {
+    "count": 1054532,
+    "types": {
+      "int": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1610612737,
+      "max": 1610612766,
+      "mean": 1610612751.3558838,
+      "median": 1610612751.0,
+      "stdev": 8.576487354672452
+    }
+  },
+  "$[*].TEAM_ABBREVIATION": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 3,
+      "max_length": 3,
+      "avg_length": 3,
+      "empty_count": 0,
+      "unique_count": 42,
+      "most_common": [
+        [
+          "BOS",
+          39446
+        ],
+        [
+          "LAL",
+          39121
+        ],
+        [
+          "IND",
+          38017
+        ],
+        [
+          "CHI",
+          38013
+        ],
+        [
+          "DAL",
+          37517
+        ]
+      ]
+    }
+  },
+  "$[*].TEAM_NAME": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 9,
+      "max_length": 33,
+      "avg_length": 15.93260043317794,
+      "empty_count": 0,
+      "unique_count": 40,
+      "most_common": [
+        [
+          "San Antonio Spurs",
+          40072
+        ],
+        [
+          "Boston Celtics",
+          39446
+        ],
+        [
+          "Los Angeles Lakers",
+          39121
+        ],
+        [
+          "Utah Jazz",
+          39052
+        ],
+        [
+          "Indiana Pacers",
+          38017
+        ]
+      ]
+    }
+  },
+  "$[*].GAME_ID": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 10,
+      "max_length": 10,
+      "avg_length": 10,
+      "empty_count": 0,
+      "unique_count": 51134,
+      "most_common": [
+        [
+          "0022301201",
+          54
+        ],
+        [
+          "0022400031",
+          54
+        ],
+        [
+          "0022301230",
+          52
+        ],
+        [
+          "0022300038",
+          52
+        ],
+        [
+          "0022400052",
+          52
+        ]
+      ]
+    }
+  },
+  "$[*].GAME_DATE": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 10,
+      "max_length": 19,
+      "avg_length": 16.486767589793388,
+      "empty_count": 0,
+      "unique_count": 8413,
+      "most_common": [
+        [
+          "2024-11-15T00:00:00",
+          520
+        ],
+        [
+          "2024-12-03T00:00:00",
+          484
+        ],
+        [
+          "2023-11-17T00:00:00",
+          464
+        ],
+        [
+          "2023-11-14T00:00:00",
+          444
+        ],
+        [
+          "2024-11-29T00:00:00",
+          412
+        ]
+      ]
+    }
+  },
+  "$[*].MATCHUP": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 9,
+      "max_length": 11,
+      "avg_length": 9.999827411591113,
+      "empty_count": 0,
+      "unique_count": 3028,
+      "most_common": [
+        [
+          "LAL @ PHX",
+          1221
+        ],
+        [
+          "LAL vs. PHX",
+          1220
+        ],
+        [
+          "PHX vs. LAL",
+          1217
+        ],
+        [
+          "PHX @ LAL",
+          1210
+        ],
+        [
+          "POR @ LAL",
+          1174
+        ]
+      ]
+    }
+  },
+  "$[*].WL": {
+    "count": 1054532,
+    "types": {
+      "str": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 1,
+      "max_length": 1,
+      "avg_length": 1,
+      "empty_count": 0,
+      "unique_count": 2,
+      "most_common": [
+        [
+          "L",
+          527593
+        ],
+        [
+          "W",
+          526939
+        ]
+      ]
+    }
+  },
+  "$[*].MIN": {
+    "count": 1054532,
+    "types": {
+      "int": 294476,
+      "float": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 69,
+      "mean": 23.48006669467277,
+      "median": 24.0,
+      "stdev": 11.677325904659101
+    }
+  },
+  "$[*].FGM": {
+    "count": 1054532,
+    "types": {
+      "int": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 28,
+      "mean": 3.76329120406019,
+      "median": 3.0,
+      "stdev": 3.1779380222852986
+    }
+  },
+  "$[*].FGA": {
+    "count": 1054532,
+    "types": {
+      "int": 1054522,
+      "NoneType": 10
+    },
+    "null_percentage": 0.0009482879609153634,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 50,
+      "mean": 8.161076772224762,
+      "median": 7.0,
+      "stdev": 5.900469521399792
+    }
+  },
+  "$[*].FG_PCT": {
+    "count": 1054532,
+    "types": {
+      "NoneType": 14190,
+      "float": 1040342
+    },
+    "null_percentage": 1.3456206165389006,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4277608776729191,
+      "median": 0.444,
+      "stdev": 0.24793076637332334
+    }
+  },
+  "$[*].FG3M": {
+    "count": 1054532,
+    "types": {
+      "int": 1054462,
+      "NoneType": 70
+    },
+    "null_percentage": 0.006638015726407544,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 14,
+      "mean": 0.6265147534951473,
+      "median": 0.0,
+      "stdev": 1.1378726604052471
+    }
+  },
+  "$[*].FG3A": {
+    "count": 1054532,
+    "types": {
+      "int": 1054188,
+      "NoneType": 344
+    },
+    "null_percentage": 0.032621105855488504,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 24,
+      "mean": 1.768795508960451,
+      "median": 1.0,
+      "stdev": 2.4362935913632544
+    }
+  },
+  "$[*].FG3_PCT": {
+    "count": 1054532,
+    "types": {
+      "NoneType": 199984,
+      "float": 854548
+    },
+    "null_percentage": 18.9642419575698,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.20691449280789376,
+      "median": 0.0,
+      "stdev": 0.2971832639838542
+    }
+  },
+  "$[*].FTM": {
+    "count": 1054532,
+    "types": {
+      "int": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 28,
+      "mean": 1.8551935835043412,
+      "median": 1.0,
+      "stdev": 2.440503020089126
+    }
+  },
+  "$[*].FTA": {
+    "count": 1054532,
+    "types": {
+      "int": 1054522,
+      "NoneType": 10
+    },
+    "null_percentage": 0.0009482879609153634,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 39,
+      "mean": 2.4475278846719175,
+      "median": 2.0,
+      "stdev": 3.0021774594990895
+    }
+  },
+  "$[*].FT_PCT": {
+    "count": 1054532,
+    "types": {
+      "NoneType": 102408,
+      "float": 952124
+    },
+    "null_percentage": 9.711227350142053,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4988796553810218,
+      "median": 0.5,
+      "stdev": 0.4203873081722273
+    }
+  },
+  "$[*].OREB": {
+    "count": 1054532,
+    "types": {
+      "int": 1054109,
+      "NoneType": 423
+    },
+    "null_percentage": 0.040112580746719875,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 18,
+      "mean": 1.1582786979335153,
+      "median": 1,
+      "stdev": 1.4976328803640506
+    }
+  },
+  "$[*].DREB": {
+    "count": 1054532,
+    "types": {
+      "int": 1054106,
+      "NoneType": 426
+    },
+    "null_percentage": 0.040397067134994476,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 26,
+      "mean": 2.9933194574359696,
+      "median": 2.0,
+      "stdev": 2.7168051661208525
+    }
+  },
+  "$[*].REB": {
+    "count": 1054532,
+    "types": {
+      "int": 1054219,
+      "NoneType": 313
+    },
+    "null_percentage": 0.029681413176650875,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 35,
+      "mean": 4.151706618833468,
+      "median": 3,
+      "stdev": 3.6016659335309718
+    }
+  },
+  "$[*].AST": {
+    "count": 1054532,
+    "types": {
+      "int": 1054222,
+      "NoneType": 310
+    },
+    "null_percentage": 0.029396926788376264,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 30,
+      "mean": 2.2504481978179167,
+      "median": 1.0,
+      "stdev": 2.6257549667068005
+    }
+  },
+  "$[*].STL": {
+    "count": 1054532,
+    "types": {
+      "int": 1054131,
+      "NoneType": 401
+    },
+    "null_percentage": 0.03802634723270607,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 11,
+      "mean": 0.7667396177514939,
+      "median": 0,
+      "stdev": 1.0241407524684996
+    }
+  },
+  "$[*].BLK": {
+    "count": 1054532,
+    "types": {
+      "int": 1054202,
+      "NoneType": 330
+    },
+    "null_percentage": 0.03129350271020699,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 15,
+      "mean": 0.48648266650983396,
+      "median": 0.0,
+      "stdev": 0.920300071001001
+    }
+  },
+  "$[*].TOV": {
+    "count": 1054532,
+    "types": {
+      "int": 1054106,
+      "NoneType": 426
+    },
+    "null_percentage": 0.040397067134994476,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 14,
+      "mean": 1.4023542224406274,
+      "median": 1.0,
+      "stdev": 1.4534021195657865
+    }
+  },
+  "$[*].PF": {
+    "count": 1054532,
+    "types": {
+      "int": 1054218,
+      "NoneType": 314
+    },
+    "null_percentage": 0.029776241972742413,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 7,
+      "mean": 2.113684266442045,
+      "median": 2.0,
+      "stdev": 1.54608351891509
+    }
+  },
+  "$[*].PTS": {
+    "count": 1054532,
+    "types": {
+      "int": 1054532
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 81,
+      "mean": 10.008249156972003,
+      "median": 8.0,
+      "stdev": 8.310643410849567
+    }
+  },
+  "$[*].PLUS_MINUS": {
+    "count": 1054532,
+    "types": {
+      "NoneType": 294476,
+      "int": 760056
+    },
+    "null_percentage": 27.924804557851257,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -58,
+      "max": 57,
+      "mean": -0.000290768048670098,
+      "median": 0.0,
+      "stdev": 10.665210836740696
+    }
+  },
+  "$[*].VIDEO_AVAILABLE": {
+    "count": 294476,
+    "types": {
+      "int": 294476
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 0,
+      "mean": 0,
+      "median": 0.0,
+      "stdev": 0.0
+    }
+  },
+  "$[*].SEASON_YEAR": {
+    "count": 760056,
+    "types": {
+      "str": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 7,
+      "max_length": 7,
+      "avg_length": 7,
+      "empty_count": 0,
+      "unique_count": 29,
+      "most_common": [
+        [
+          "2023-24",
+          29629
+        ],
+        [
+          "2021-22",
+          28049
+        ],
+        [
+          "2024-25",
+          28040
+        ],
+        [
+          "2015-16",
+          27978
+        ],
+        [
+          "2016-17",
+          27876
+        ]
+      ]
+    }
+  },
+  "$[*].BLKA": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 9,
+      "mean": 0.4746110812887471,
+      "median": 0.0,
+      "stdev": 0.7753615496481658
+    }
+  },
+  "$[*].PFD": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 25,
+      "mean": 1.3990627006431104,
+      "median": 1.0,
+      "stdev": 1.9623162014500815
+    }
+  },
+  "$[*].NBA_FANTASY_PTS": {
+    "count": 760056,
+    "types": {
+      "float": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": -4.8,
+      "max": 105.2,
+      "mean": 20.362711826496994,
+      "median": 18.4,
+      "stdev": 14.335993905774938
+    }
+  },
+  "$[*].DD2": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.08389644973528267,
+      "median": 0.0,
+      "stdev": 0.27723263981449
+    }
+  },
+  "$[*].TD3": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.0026892755270664266,
+      "median": 0.0,
+      "stdev": 0.05178848185605514
+    }
+  },
+  "$[*].WNBA_FANTASY_PTS": {
+    "count": 760056,
+    "types": {
+      "float": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0.0,
+      "max": 104.0,
+      "mean": 19.341069605397497,
+      "median": 17.0,
+      "stdev": 13.50878559363273
+    }
+  },
+  "$[*].GP_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "median": 1.0,
+      "stdev": 0.0
+    }
+  },
+  "$[*].W_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 13252,
+      "mean": 5788.583630679845,
+      "median": 1.0,
+      "stdev": 6168.064881804168
+    }
+  },
+  "$[*].L_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 13252,
+      "mean": 5788.583630679845,
+      "median": 1.0,
+      "stdev": 6168.064881804168
+    }
+  },
+  "$[*].W_PCT_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 13252,
+      "mean": 5788.583630679845,
+      "median": 1.0,
+      "stdev": 6168.064881804168
+    }
+  },
+  "$[*].MIN_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 26400,
+      "mean": 11573.293533634363,
+      "median": 11368.0,
+      "stdev": 7530.807901423764
+    }
+  },
+  "$[*].FGM_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 22860,
+      "mean": 10321.70217457661,
+      "median": 10113.0,
+      "stdev": 6940.151107002633
+    }
+  },
+  "$[*].FGA_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 25092,
+      "mean": 10952.134408517268,
+      "median": 10581.0,
+      "stdev": 7297.567760844035
+    }
+  },
+  "$[*].FG_PCT_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 22860,
+      "mean": 10913.291717978675,
+      "median": 11037.0,
+      "stdev": 7237.566132511963
+    }
+  },
+  "$[*].FG3M_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 15070,
+      "mean": 6598.883644099908,
+      "median": 6867.0,
+      "stdev": 4070.682589040632
+    }
+  },
+  "$[*].FG3A_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 20945,
+      "mean": 8969.05051075184,
+      "median": 9513.0,
+      "stdev": 5648.583718981219
+    }
+  },
+  "$[*].FG3_PCT_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 15070,
+      "mean": 7004.899116644036,
+      "median": 7008.0,
+      "stdev": 4091.002485715961
+    }
+  },
+  "$[*].FTM_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 14455,
+      "mean": 8585.529183375962,
+      "median": 10224.0,
+      "stdev": 5061.731400642759
+    }
+  },
+  "$[*].FTA_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 15316,
+      "mean": 8841.885230825097,
+      "median": 8357.0,
+      "stdev": 5358.674427136647
+    }
+  },
+  "$[*].FT_PCT_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 14455,
+      "mean": 8342.800069994842,
+      "median": 10502.0,
+      "stdev": 5777.8568573076955
+    }
+  },
+  "$[*].OREB_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 14112,
+      "mean": 7965.845217983938,
+      "median": 7381.0,
+      "stdev": 4976.736654630016
+    }
+  },
+  "$[*].DREB_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 22618,
+      "mean": 10071.054124959213,
+      "median": 9404.0,
+      "stdev": 6820.950000469858
+    }
+  },
+  "$[*].REB_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 23475,
+      "mean": 10417.113571894703,
+      "median": 9586.0,
+      "stdev": 6995.442204869903
+    }
+  },
+  "$[*].AST_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 19908,
+      "mean": 9457.611370741104,
+      "median": 9105.0,
+      "stdev": 6118.735691966384
+    }
+  },
+  "$[*].TOV_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 17006,
+      "mean": 8676.071684191691,
+      "median": 9034.0,
+      "stdev": 5929.267842045964
+    }
+  },
+  "$[*].STL_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 12854,
+      "mean": 7176.12758665151,
+      "median": 5028.0,
+      "stdev": 4621.000872949468
+    }
+  },
+  "$[*].BLK_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 8529,
+      "mean": 5494.436417842896,
+      "median": 7394.0,
+      "stdev": 2961.77979743623
+    }
+  },
+  "$[*].BLKA_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 26395,
+      "mean": 5817.6357057901,
+      "median": 1.0,
+      "stdev": 8616.615800339434
+    }
+  },
+  "$[*].PF_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 26163,
+      "mean": 9395.631516625092,
+      "median": 8985.0,
+      "stdev": 7590.622782130894
+    }
+  },
+  "$[*].PFD_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 18923,
+      "mean": 6944.254120748998,
+      "median": 4747.0,
+      "stdev": 6716.808983307151
+    }
+  },
+  "$[*].PTS_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 23456,
+      "mean": 10990.486427315882,
+      "median": 10860.0,
+      "stdev": 7158.746679986955
+    }
+  },
+  "$[*].PLUS_MINUS_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 26401,
+      "mean": 11254.470528487374,
+      "median": 10900.0,
+      "stdev": 7486.222755792332
+    }
+  },
+  "$[*].NBA_FANTASY_PTS_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 26401,
+      "mean": 11535.683891713243,
+      "median": 11343.0,
+      "stdev": 7498.950695616247
+    }
+  },
+  "$[*].DD2_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 2359,
+      "mean": 1773.0017656593725,
+      "median": 2081.0,
+      "stdev": 724.2059379238841
+    }
+  },
+  "$[*].TD3_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 150,
+      "mean": 62.75131700822045,
+      "median": 43.0,
+      "stdev": 44.47219162180177
+    }
+  },
+  "$[*].WNBA_FANTASY_PTS_RANK": {
+    "count": 760056,
+    "types": {
+      "int": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 1,
+      "max": 25341,
+      "mean": 11309.439117643964,
+      "median": 11052.0,
+      "stdev": 7434.235517665222
+    }
+  },
+  "$[*].AVAILABLE_FLAG": {
+    "count": 760056,
+    "types": {
+      "NoneType": 403415,
+      "int": 356641
+    },
+    "null_percentage": 53.07701011504415,
+    "empty_percentage": 0.0,
+    "numeric_stats": {
+      "min": 0,
+      "max": 2,
+      "mean": 1.0042423613661917,
+      "median": 1,
+      "stdev": 0.11601974037709945
+    }
+  },
+  "$[*].MIN_SEC": {
+    "count": 760056,
+    "types": {
+      "str": 760056
+    },
+    "null_percentage": 0.0,
+    "empty_percentage": 0.0,
+    "string_stats": {
+      "min_length": 4,
+      "max_length": 5,
+      "avg_length": 4.844839064489985,
+      "empty_count": 0,
+      "unique_count": 3387,
+      "most_common": [
+        [
+          "12:00",
+          2084
+        ],
+        [
+          "24:00",
+          1316
+        ],
+        [
+          "48:00",
+          546
+        ],
+        [
+          "27:54",
+          437
+        ],
+        [
+          "36:00",
+          415
+        ]
+      ]
+    }
+  }
+}
